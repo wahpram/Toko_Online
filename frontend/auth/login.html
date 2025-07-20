@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Toko3D</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="max-w-md w-full">
+            <!-- Login Form Card -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <!-- Header -->
+                <div class="text-center mb-8">
+                    <a href="../index.html" class="inline-block mb-4">
+                        <h1 class="text-3xl font-bold text-blue-600">Toko3D</h1>
+                    </a>
+                    <p class="text-gray-600">Welcome back! Please login to your account.</p>
+                </div>
+
+                <!-- Error Message Container -->
+                <div id="errorMessage" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4"></div>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="space-y-6">
+                    <!-- Email Input -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                            Email Address
+                        </label>
+                        <input type="email" id="email" name="email" required
+                               class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <!-- Password Input -->
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">
+                            Password
+                        </label>
+                        <input type="password" id="password" name="password" required
+                               class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="remember" name="remember"
+                                   class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                            <label for="remember" class="ml-2 block text-sm text-gray-700">
+                                Remember me
+                            </label>
+                        </div>
+                        <a href="#" class="text-sm text-blue-600 hover:text-blue-800">
+                            Forgot password?
+                        </a>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                            class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 
+                                   transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        Sign In
+                    </button>
+                </form>
+
+                <!-- Register Link -->
+                <p class="mt-4 text-center text-sm text-gray-600">
+                    Don't have an account? 
+                    <a href="register.html" class="text-blue-600 hover:text-blue-800 font-semibold">
+                        Sign up
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/login.js"></script>
+</body>
+</html>
