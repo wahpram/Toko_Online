@@ -95,7 +95,7 @@ router.get('/', authenticate, async (req, res) => {
                     ]
                 }
             ],
-            order: [['createdAt', 'ASC']],
+            order: [['createdAt', 'DESC']],
             attributes: ['id', 'total_price', 'status', 'createdAt']
         });
 
